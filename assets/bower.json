@@ -1,0 +1,33 @@
+{
+  "name": "login-task",
+  "authors": [
+    "MauricioModelit <mauricio.machado@modelit.xyz>"
+  ],
+  "description": "Company assignment to improve MEAN development and knowledge",
+  "main": [
+    "../public/css/style.css",
+    "../public/js/main.js",
+    "../public/index.html"
+  ],
+  "keywords": [
+    "MEAN",
+    "Work",
+    "Assignment",
+    "Training"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.1",
+    "font-awesome": "^4.7.0",
+    "angular-route": "^1.6.1"
+  }
+}
