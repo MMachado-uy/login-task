@@ -2,16 +2,6 @@ module.exports = function(grunt) {
     exec = require('child_process').exec;
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        sass: {
-            dist: {
-                options: {
-                    style: 'compressed'
-                },
-                files: {
-                    '../public/css/style.css': 'styles/main.scss'
-                }
-            }
-        },
         watch: {
             js: {
                 files: 'js/**/*.js',
@@ -19,7 +9,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: 'styles/*.scss',
-                tasks: ['sass']
+                tasks: ['sass:watch']
             }
         },
         browserify: {
@@ -59,7 +49,8 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    '../public/css/lib.min.css': ['../public/css/lib.css']
+                    '../dist/css/lib.css': ['../public/css/lib.css'],
+                    '../dist/css/style.css': ['../public/css/style.css']
                 }
             }
         },
@@ -72,32 +63,36 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    '../public/js/main.min.js': ['../public/js/main.js']
+                    '../dist/js/main.js': ['../public/js/main.js'],
+                    '../dist/js/lib.js': ['../public/js/lib.js']
                 }
             }
         },
-        eslint: {
-            target: ['assets/js/**.js']
+        sass: {
+            watch: {
+                options: {
+                    style: 'expanded'
+                },
+                files: {
+                    '../public/css/style.css': 'styles/main.scss'
+                }
+            }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-angular-templates');
+    grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-compress');
-    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-browserify');
-    grunt.loadNpmTasks('grunt-exec');
-    grunt.loadNpmTasks('grunt-shell');
-    grunt.loadNpmTasks('grunt-eslint');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-sass');
 
     // Default task(s)
-    grunt.registerTask('default', []);
-    grunt.registerTask('build', ['browserify', 'concat', 'cssmin', 'uglify', 'sass']);
+    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('build', ['browserify', 'concat', 'sass']);
+    grunt.registerTask('pack', ['browserify', 'concat', 'sass', 'cssmin', 'uglify']);
 
 };
