@@ -5,11 +5,11 @@
   "main": "app.js",
   "author": "MauricioModelit <mauricio.machado@modelit.xyz>",
   "dependencies": {
-    "bcrypt": "^0.8.7",
     "express": "^4.13.4",
     "fb": "^1.1.1",
     "google-auth-library": "^0.9.7",
     "googleapis": "^5.2.1",
-    "jsclass": "^4.0.5"
+    "jsclass": "^4.0.5",
+    "mongodb": "^2.2.24"
   }
 }

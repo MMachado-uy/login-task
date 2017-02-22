@@ -8,8 +8,14 @@
         <link rel="stylesheet" href="css/lib.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-        
+    <body ng-controller="mainController" ng-init="init()">
+
+        <div ng-include="navbar.url"></div>
+
+        <div ng-view></div>
+
+        <div ng-include="footer.url"></div>
+
         <script src="js/lib.js"></script>
         <script src="js/main.js"></script>
     </body>

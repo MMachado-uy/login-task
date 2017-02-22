@@ -1,6 +1,7 @@
 dist/
 public/css
 public/js
+assets/.sass-cache
 
 
 # Project-specifics in top of this line
