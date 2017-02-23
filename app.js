@@ -13,6 +13,6 @@ var mongo   = require('mongodb');
 var app = express();
 var routes = require('./server/routes')
 app.use(express.static(__dirname + '/public'));
-app.listen(8080, function() {
-    console.log("Hey, I'm running @ port 8080!");
+app.listen(80, function() {
+    console.log("Hey, I'm running @ port 80!");
 });
