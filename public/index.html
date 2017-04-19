@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="app">
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Company assignment to improve MEAN development and knowledge">
@@ -10,6 +10,15 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body ng-controller="mainController" ng-init="init()">
+        
+        <!-- Navbar -->
+        <div ng-include="navbar.url"></div>
+
+        <!-- Content -->
+        <div ng-view></div>
+
+        <!-- Footer -->
+        <div ng-include="footer.url"></div>
 
         <script src="js/lib.js"></script>
         <script src="js/main.js"></script>
