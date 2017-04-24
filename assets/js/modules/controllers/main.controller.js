@@ -19,6 +19,13 @@ Controllers.controller('mainController', ['$scope', '$location',
                 name: 'footer.html',
                 url: '../views/includes/footer.html'
             };
+
+            $scope.manageIncludes = {
+                "home": {
+                    name: 'home.html',
+                    url: 'views/public/home.html'
+                }
+            };
         };
     }
 ]);

@@ -4,4 +4,5 @@
 
 angular.module('Controllers', []);
 
-require('./controllers/main.controller.js');
+require('./controllers/main.controller');
+require('./controllers/home.controller');
