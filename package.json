@@ -11,5 +11,9 @@
     "googleapis": "^5.2.1",
     "jsclass": "^4.0.5",
     "mongodb": "^2.2.24"
+  },
+  "scripts" : { 
+    "start" : "node app.js",
+    "setup" : "setup.sh"
   }
 }

@@ -1,0 +1,18 @@
+.testCard {
+    @include card();
+    @include card1();
+}
+
+.testCard:hover {
+    @include card1Hover();
+}
+
+.testTile {
+    @include card1();
+    @include card(50px, 100%);
+
+}
+
+.testTile:hover {
+    @include card1Hover();
+}
