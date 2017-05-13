@@ -1,28 +1,34 @@
-<div ng-init="init()" class="container">
+<div ng-init="init()" class="container home-container">
     <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <div class="testTile text-center" ng-click="noty()">
-                Welcome to the Home view!
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 clickable">
+                    <div class="base-tile content-centered" ng-click="login()">
+                        Log in to the system
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="form-tile form-tile--closed">
+                        <form>
+                            <label for="home-login--name">Username:</label>
+                            <input type="text" name="name" id="home-login--name">
+                            <br>
+                            <label for="home-login--name">Password:</label>
+                            <input type="password" name="name" id="home-login--name">
+                            <br>
+                            <input type="button" name="Log In">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 col-md-offset-4">
-            <div class="testTile text-center">
-                Welcome to the Home view!
-            </div>
-        </div>
-        <div class="col-md-4 col-md-offset-4">
-            <div class="testTile text-center">
-                Welcome to the Home view!
-            </div>
-        </div>
-        <div class="col-md-4 col-md-offset-4">
-            <div class="testTile text-center">
-                Welcome to the Home view!
-            </div>
-        </div>
-        <div class="col-md-4 col-md-offset-4">
-            <div class="testTile text-center">
-                Welcome to the Home view!
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 clickable">
+            <div class="base-tile content-centered" ng-click="register()">
+                Register
             </div>
         </div>
     </div>

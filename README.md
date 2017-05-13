@@ -7,3 +7,16 @@
 
 - In the project root run: ```npm start```
 - In the _assets_ folder run: ```grunt start```
+
+## Nerds & Devs
+
+The stylesheets try to follow [these](https://github.com/airbnb/css) rules.
+While the JS code tries with [these](http://jstherightway.org/).
+
+#### ~~Stuff~~ Technologies used:
+
+- Angular 1.6.4
+- MongoDB
+- Node
+- Grunt
+- Sass

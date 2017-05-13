@@ -11,8 +11,12 @@ Controllers.controller('homeController', ['$scope', '$location',
             console.log("The homeController is loaded!");
         };
 
-        $scope.noty = function() {
-            // noty.show('Test message',"success");
+        $scope.login = function() {
+            console.log('Login!');
+        };
+
+        $scope.register = function() {
+            console.log('Register!');
         };
     }
 ]);

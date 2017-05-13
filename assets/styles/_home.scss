@@ -1,3 +1,7 @@
+.home-container {
+    margin-top: 30vh;
+}
+
 .testCard {
     @include card();
     @include card1();
@@ -7,12 +11,25 @@
     @include card1Hover();
 }
 
-.testTile {
-    @include card1();
+.base-tile {
     @include card(50px, 100%);
+    @include card1();
 
 }
 
-.testTile:hover {
+.base-tile:hover {
     @include card1Hover();
+}
+
+.form-tile {
+    @include card1();
+
+    &--closed {
+        overflow: hidden;
+        @include card(0px, 100%);
+    }
+
+    &--open {
+        @include card(auto, 100%);
+    }
 }

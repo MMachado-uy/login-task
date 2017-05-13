@@ -18,7 +18,6 @@ $info: #3F51B5;
 @mixin card($height: 300px, $width: 300px) {
   background: #fff;
   border-radius: 2px;
-  display: inline-block;
   height: $height;
   margin: 1rem;
   position: relative;

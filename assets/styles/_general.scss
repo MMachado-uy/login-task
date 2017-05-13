@@ -3,12 +3,22 @@ body {
     min-height: calc(100% - 60px);
 }
 
-#appNavbar {
+.clickable {
+    cursor: pointer;
+}
+
+.content-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
     @include navFooter('top');
 }
 
-#appFooter {
-    @include navFooter('bottom');
-    width: 100%;
+.footer {
     height: 30px;
+    width: 100%;
+    @include navFooter('bottom');
 }
