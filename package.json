@@ -14,6 +14,7 @@
   },
   "scripts" : { 
     "start" : "node app.js",
-    "setup" : "setup.sh"
+    "setupUnix" : "setup.sh",
+    "setupWin" : "setup.bat"
   }
 }
