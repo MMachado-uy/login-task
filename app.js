@@ -4,6 +4,9 @@
  * @author  Mauricio Machado <mauricio.machado@modelit.xyz>
  **/
 
+ /* Env variables */
+require('dotenv').config();
+
 /* Dependencies */
 var express = require('express');
 var http    = require('http');

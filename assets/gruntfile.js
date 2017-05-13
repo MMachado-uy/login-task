@@ -93,6 +93,7 @@ module.exports = function(grunt) {
     // Default tasks
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('build', ['browserify', 'concat', 'sass']);
+    grunt.registerTask('start', ['browserify', 'concat', 'sass', 'watch']);
     grunt.registerTask('pack', ['browserify', 'concat', 'sass', 'cssmin', 'uglify']);
 
 };

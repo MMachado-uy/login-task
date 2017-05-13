@@ -2,7 +2,7 @@ dist/
 public/css
 public/js
 assets/.sass-cache
-
+.env
 
 # Project-specifics in top of this line
 # gitignores provided by https://github.com/github/gitignore

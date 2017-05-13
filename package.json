@@ -5,6 +5,7 @@
   "main": "app.js",
   "author": "MauricioModelit <mauricio.machado@modelit.xyz>",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.13.4",
     "fb": "^1.1.1",
     "google-auth-library": "^0.9.7",
@@ -12,9 +13,9 @@
     "jsclass": "^4.0.5",
     "mongodb": "^2.2.24"
   },
-  "scripts" : { 
-    "start" : "node app.js",
-    "setupUnix" : "setup.sh",
-    "setupWin" : "setup.bat"
+  "scripts": {
+    "start": "node app.js",
+    "setupUnix": "setup.sh",
+    "setupWin": "setup.bat"
   }
 }
