@@ -8,7 +8,11 @@ module.exports = function(grunt) {
                 tasks: ['browserify']
             },
             css: {
-                files: 'styles/*.scss',
+                files: [
+                    'styles/*.scss',
+                    'styles/modules/*.scss',
+                    'styles/partials/*.scss'
+                ],
                 tasks: ['sass:watch']
             }
         },
@@ -27,7 +31,7 @@ module.exports = function(grunt) {
             },
             lib: {
                 src: [
-                    'bower_components/jquery/jquery.min.js',
+                    'bower_components/jquery/dist/jquery.min.js',
                     'bower_components/angular/angular.min.js',
                     'bower_components/angular-route/angular-route.min.js',
                     'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
