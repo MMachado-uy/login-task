@@ -1,16 +1,3 @@
-.home-container {
-    margin-top: 30vh;
-}
-
-.testCard {
-    @include card();
-    @include card1();
-}
-
-.testCard:hover {
-    @include card1Hover();
-}
-
 .base-tile {
     @include card(50px, 100%);
     @include card1();
@@ -22,14 +9,14 @@
 }
 
 .form-tile {
+    overflow: hidden;
     @include card1();
 
     &--closed {
-        overflow: hidden;
         @include card(0px, 100%);
     }
 
     &--open {
-        @include card(auto, 100%);
+        @include card(85px, 100%);
     }
 }

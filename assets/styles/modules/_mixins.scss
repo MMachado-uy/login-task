@@ -1,13 +1,3 @@
-$base: #FF5722;
-$base-light: lighten($base, 20%);
-$base-dark: darken($base, 40%);
-
-$error: #F44336;
-$warning: #FFEB3B;
-$info: #3F51B5;
-
-// Mixins ######################################################################
-
 @mixin navFooter($position) {
     position: fixed;
     #{$position}: 0;

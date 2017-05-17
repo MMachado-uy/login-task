@@ -1,7 +1,4 @@
-@import 'variables';
-
-// Base Styles
-@import 'general';
-// Pages
-@import 'login';
-@import 'home';
+// Modules *Do not output CSS*
+@import 'modules/all';
+// Partials *Styles for the elements of the application*
+@import 'partials/all';
