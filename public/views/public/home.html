@@ -10,7 +10,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <div class="form-tile form-tile--closed">
+                    <div class="form-tile form-tile--closed" id="_loginForm">
                         <form>
                             <label for="home-login--name">Username:</label>
                             <input type="text" name="name" id="home-login--name">
@@ -26,9 +26,28 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4 col-md-offset-4 clickable">
-            <div class="base-tile content-centered" ng-click="register()">
-                Register
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 clickable">
+                    <div class="base-tile content-centered" ng-click="register()">
+                        Register
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="form-tile form-tile--closed" id="_registerForm">
+                        <form>
+                            <label for="home-login--name">Username:</label>
+                            <input type="text" name="name" id="home-login--name">
+                            <br>
+                            <label for="home-login--name">Password:</label>
+                            <input type="password" name="name" id="home-login--name">
+                            <br>
+                            <input type="button" name="Log In">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

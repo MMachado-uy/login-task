@@ -12,11 +12,23 @@ Controllers.controller('homeController', ['$scope', '$location',
         };
 
         $scope.login = function() {
-            console.log('Login!');
+            if ($('#_registerForm').hasClass('form-tile--open')) {
+                $('#_registerForm').toggleClass('form-tile--closed');
+                $('#_registerForm').toggleClass('form-tile--open');  
+            }
+
+            $('#_loginForm').toggleClass('form-tile--closed');
+            $('#_loginForm').toggleClass('form-tile--open');
         };
 
         $scope.register = function() {
-            console.log('Register!');
+            if ($('#_loginForm').hasClass('form-tile--open')) {
+                $('#_loginForm').toggleClass('form-tile--closed');
+                $('#_loginForm').toggleClass('form-tile--open');  
+            }
+
+            $('#_registerForm').toggleClass('form-tile--closed');
+            $('#_registerForm').toggleClass('form-tile--open');
         };
     }
 ]);
