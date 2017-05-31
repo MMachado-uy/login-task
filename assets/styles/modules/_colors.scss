@@ -2,6 +2,8 @@ $base: #FF5722;
 $base-light: lighten($base, 40%);
 $base-dark: darken($base, 60%);
 
+$base-blue: #3F51B5;
+
 $error: #F44336;
 $warning: #FFEB3B;
-$info: #3F51B5;
+$info: $base-blue;
