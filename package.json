@@ -5,16 +5,19 @@
   "main": "app.js",
   "author": "MauricioModelit <mauricio.machado@modelit.xyz>",
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "dotenv": "^4.0.0",
     "express": "^4.13.4",
     "fb": "^1.1.1",
     "google-auth-library": "^0.9.7",
     "googleapis": "^5.2.1",
     "jsclass": "^4.0.5",
+    "md5": "^2.2.1",
     "mongodb": "^2.2.24"
   },
   "scripts": {
     "start": "node app.js",
+    "startDB": "mongod --dbpath=/data --port 27017",
     "setupUnix": "setup.sh",
     "setupWin": "setup.bat"
   }
