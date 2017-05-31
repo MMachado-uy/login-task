@@ -1,3 +1,9 @@
+# Dependencies:
+
+- MongoDB Server
+- NPM (NVM doesn't hurt too)
+- Bower (Globally)
+
 # First Execution - To set up the project:
 
 - In the project root run: ```npm run setupWin``` (If you're using Windows)
@@ -20,3 +26,8 @@ While the JS code tries with [these](http://jstherightway.org/).
 - Node
 - Grunt
 - Sass
+
+#### References:
+
+- https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/
+- http://antrikshy.com/blog/run-mongodb-automatically-nodejs-project
