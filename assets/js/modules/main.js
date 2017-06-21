@@ -7,5 +7,6 @@
  **/
 
 require('./app.js');
-require('./routes.js');
 require('./controllers.js');
+require('./routes.js');
+require('./services.js');

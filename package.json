@@ -20,5 +20,8 @@
     "startDB": "mongod --dbpath=/data --port 27017",
     "setupUnix": "setup.sh",
     "setupWin": "setup.bat"
+  },
+  "devDependencies": {
+    "memory-cache": "^0.2.0"
   }
 }

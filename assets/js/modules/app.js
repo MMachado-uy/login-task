@@ -3,4 +3,4 @@
  *
  * @since Feb, 2017
  **/
-var app = angular.module('app', ['ngRoute', 'Controllers', 'ui.bootstrap']);
+var app = angular.module('app', ['ngRoute', 'Controllers', 'Services', 'ui.bootstrap']);

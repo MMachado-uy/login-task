@@ -7,7 +7,7 @@
 var MongoClient = require('mongodb').MongoClient, assert = require('assert');
  
 // Connection URL 
-var url = 'mongodb://localhost:27017/login-task';
+var url = 'mongodb://localhost:' + process.env.DB_URL;
 // Use connect method to connect to the Server 
 MongoClient.connect(url, function(err, db) {
   assert.equal(null, err);

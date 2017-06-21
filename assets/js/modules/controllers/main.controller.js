@@ -4,8 +4,8 @@
 
 var Controllers = angular.module('Controllers');
 
-Controllers.controller('mainController', ['$scope', '$location', 
-    function($scope, $location) {
+Controllers.controller('mainController', ['$scope', '$location', '$http', 'Request',
+    function($scope, $location, $http, Request) {
 
         $scope.init = function() {
             console.log("The mainController is loaded!");

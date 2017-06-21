@@ -32,12 +32,12 @@ function getError(errorType) {
         case 'ERR_GRAL_DEFAULT':
             errorMessage = "Huston, we have a situation.";
             break;
-        case 'ERR_GRAL_SQL':
-            errorMessage = "There was a SQL error";
+        case 'ERR_GRAL_DB':
+            errorMessage = "There was a Database error";
             break;
 
         default:
-            errorMessage = "Unrecognized error occured";
+            errorMessage = "Unrecognized error occurred";
     }
 
     return errorMessage;
